@@ -32,17 +32,10 @@ module.exports = {
                 }
               }
               tracks {
+                aliasedLength: length
                 id
-                title
                 updatedAt
                 createdAt
-                record {
-                  id
-                  tracks {
-                    title
-                    length
-                  }
-                }
               }
             }
           }

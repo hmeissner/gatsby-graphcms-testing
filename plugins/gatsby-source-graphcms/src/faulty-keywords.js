@@ -1,12 +1,10 @@
 import R from "ramda"
 
 export const faultyKeywords = [
-  'length',
-  'prototype',
-  'constructor'
+  `length`,
 ]
 
-export const keywordsError = `One or more of your project's fields has a name matching one of ( ${faultyKeywords} ) which due to current limitations has to change in order for the plugin to get all the data correctly`
+export const keywordsError = `Found unaliased reserved field with a name matching one of ${faultyKeywords}. Build failed! Please refer to the caveats in the gatsby-source-graphcms README for a solution. (link#aliasing)`
 
 // Checking if the query we pass in config has any of the faulty fields
 export const checkForFaultyFields = (data, keywords) => {
