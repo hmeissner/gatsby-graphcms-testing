@@ -9,6 +9,10 @@ module.exports = {
       options: {
         endpoint: `https://api.graphcms.com/simple/v1/vinylbase`,
         query: `{
+          allReviews {
+            id
+            rating
+          }
           allArtists {
             id
             name
@@ -22,8 +26,23 @@ module.exports = {
             records {
               id
               title
+              reviews {
+                comments {
+                  body
+                }
+              }
               tracks {
                 id
+                title
+                updatedAt
+                createdAt
+                record {
+                  id
+                  tracks {
+                    title
+                    length
+                  }
+                }
               }
             }
           }
