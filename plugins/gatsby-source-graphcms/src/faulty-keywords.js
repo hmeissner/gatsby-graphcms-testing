@@ -14,7 +14,7 @@ export const checkForFaultyFields = (data, keywords) => {
       all.push(
         ...Object.keys(obj).map(key => 
           obj[key] instanceof Object
-          ? getKeys(obj[key])
+          ? getKeys(obj[key]) && key
           : key
         )
       )
