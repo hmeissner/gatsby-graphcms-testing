@@ -5,7 +5,7 @@
       "env",
       {
         "targets": {
-          "node": 9
+          "node": "current"
         }
       }
     ]
