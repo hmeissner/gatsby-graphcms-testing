@@ -1,4 +1,9 @@
-# Using GraphCMS
+# Gatsby's GraphCMS plugin testing
 
-Example site that demonstrates how to build Gatsby sites
-that pull data from the [GraphCMS](https://graphcms.com/).
+1. `git clone git clone git@github.com:hmeissner/using-graphcms-gatsby.git gatsby-graphcms-testing`
+2. `cd gatsby-graphcms-testing/plugins/gatsby-source-graphcms && yarn && yarn build`
+3. `cd ../.. && yarn && yarn develop`
+
+Swap `yarn build` for `yarn watch` in plugin's directory for auto-rebuilding the plugin after you make changes to it.
+### Every time you rebuild the plugin, gatsby's development server has to be restarted for the changes to reflect.
+
