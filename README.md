@@ -1,6 +1,6 @@
 # Gatsby's GraphCMS plugin testing
 
-1. `git clone git clone git@github.com:hmeissner/using-graphcms-gatsby.git gatsby-graphcms-testing`
+1. `git clone git clone git@github.com:hmeissner/gatsby-graphcms-testing.git gatsby-graphcms-testing`
 2. `cd gatsby-graphcms-testing/plugins/gatsby-source-graphcms && yarn && yarn build`
 3. `cd ../.. && yarn && yarn develop`
 
