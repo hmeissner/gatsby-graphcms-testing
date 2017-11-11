@@ -7,37 +7,10 @@ module.exports = {
     {
       resolve: `gatsby-source-graphcms`,
       options: {
-        endpoint: `https://api.graphcms.com/simple/v1/vinylbase`,
+        endpoint: `https://api.graphcms.com/simple/v1/pikio`,
         query: `{
-          allReviews {
+          allArticles {
             id
-            rating
-          }
-          allArtists {
-            id
-            name
-            slug
-            picture { 
-              id
-              url
-              height
-              width
-            }
-            records {
-              id
-              title
-              reviews {
-                comments {
-                  body
-                }
-              }
-              tracks {
-                aliasedLength: length
-                id
-                updatedAt
-                createdAt
-              }
-            }
           }
         }`,
       },
