@@ -9,34 +9,63 @@ module.exports = {
       options: {
         endpoint: `https://api.graphcms.com/simple/v1/vinylbase`,
         query: `{
-          allReviews {
-            id
-            rating
-          }
           allArtists {
             id
-            name
             slug
-            picture { 
+            name
+            picture {
               id
-              url
-              height
+              handle
               width
+              height
             }
             records {
               id
+              slug
               title
-              reviews {
-                comments {
-                  body
-                }
+            }
+          }
+          allRecords(orderBy: createdAt_DESC) {
+            id
+            slug
+            title
+            artist {
+              id
+              slug
+              name
+            }
+            createdAt
+            tracks {
+              id
+              title
+              aliasedLength: length
+            }
+            cover {
+              handle
+            }
+            reviews {
+              id
+              slug
+              title
+            }
+          }
+          allReviews(orderBy: createdAt_DESC) {
+            id
+            slug
+            createdAt
+            record {
+              slug
+              title
+              artist {
+                slug
+                name
               }
-              tracks {
-                aliasedLength: length
-                id
-                updatedAt
-                createdAt
-              }
+            }
+            title
+            review
+            rating
+            comments {
+              body
             }
           }
         }`,
