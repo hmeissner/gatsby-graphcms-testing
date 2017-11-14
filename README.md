@@ -2,7 +2,7 @@ See [@GraphCMS/gatsby-source-graphcms](https://github.com/GraphCMS/gatsby-source
 
 # Gatsby’s GraphCMS plugin testing
 
-1. `git clone git@github.com:rdela/gatsby-graphcms-testing.git gatsby-graphcms-testing`
+1. `git clone git@github.com:hmeissner/gatsby-graphcms-testing.git gatsby-graphcms-testing`
 2. `cd gatsby-graphcms-testing/plugins/gatsby-source-graphcms && yarn && yarn build`
 3. `cd ../.. && yarn && yarn develop`
 
