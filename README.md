@@ -1,6 +1,6 @@
 See [@GraphCMS/gatsby-source-graphcms](https://github.com/GraphCMS/gatsby-source-graphcms)
 
-# Gatsby's GraphCMS plugin testing
+# Gatsby’s GraphCMS plugin testing
 
 1. `git clone git@github.com:hmeissner/gatsby-graphcms-testing.git gatsby-graphcms-testing`
 2. `cd gatsby-graphcms-testing/plugins/gatsby-source-graphcms && yarn && yarn build`
@@ -9,7 +9,7 @@ See [@GraphCMS/gatsby-source-graphcms](https://github.com/GraphCMS/gatsby-source
 Swap `yarn build` for `yarn watch` in plugin's directory for
 auto-rebuilding the plugin after you make changes to it.
 
-### Every time you rebuild the plugin, gatsby's development server has to be restarted to reflect the changes.
+### Every time you rebuild the plugin, you must restart Gatsby’s development server to reflect the changes.
 
 For an kitchen sink Graph<em>i</em>QL query you can run on Gatsby’s
 graphql debugger at <http://localhost:8000/___graphql>, try this
