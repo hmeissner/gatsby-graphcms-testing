@@ -5,7 +5,7 @@
 Source plugin for pulling data into [Gatsby](https://github.com/gatsbyjs) from a
 [GraphCMS](https://graphcms.com) endpoint.
 
-#### [Working example: @hmeissner/gatsby-graphcms-testing](https://github.com/hmeissner/gatsby-graphcms-testing)
+#### [Working example: @rdela/gatsby-graphcms-testing](https://github.com/rdela/gatsby-graphcms-testing)
 
 ## Install
 
@@ -30,7 +30,7 @@ testing steps below.
    below.
 1. From there you can `cd ../.. && yarn && yarn develop` to test.
 
-### Every time you rebuild the plugin, gatsby's development server has to be restarted for the changes to be reflected in your test environment.
+### Every time you rebuild the plugin, you must restart Gatsby’s development server to reflect the changes in your test environment.
 
 ## Usage
 
@@ -154,21 +154,27 @@ in this case, bearing in mind pagination limitations described above.
 
 #### Does not support localization
 
-GraphCMS recently implemented localization, which provides an interesting
-challenge for the plugin.
+[GraphCMS recently implemented localization](https://graphcms.com/blog/introducing-content-localization),
+which provides an interesting challenge for the plugin. Work in Gatsby on
+“[GeoIP and Language-based redirects](https://github.com/gatsbyjs/gatsby/pull/2890)”
+is ongoing with some really nice
+[extras for those who host with Netlify](https://www.netlify.com/docs/redirects/#geoip-and-language-based-redirects).
 
 ## Discussion
 
 All of the aforementioned limitations are under active discussion and
 development in the Gatsby channel on the GraphCMS Slack group.
-[Join us!](https://graphcms.slack.com/) Contact a contributor for an invite if
-needed.
+[Join us!](https://slack.graphcms.com/)
 
 ## Other TODOs
 
 1. Implement support for relationships/embedded fields
-1. Implement mapping feature for transformation plugins, like the MongoDB plugin
-1. Explore schema stitching and `graphql-tools`
+1. Implement mapping feature for transformation plugins, like
+   [the MongoDB plugin](https://www.gatsbyjs.org/packages/gatsby-source-mongodb/#mapping-mediatype-feature)
+1. Explore schema stitching —
+   [Apollo GraphQL Tools Docs](https://www.apollographql.com/docs/graphql-tools/schema-stitching.html),
+   [blog post](https://dev-blog.apollodata.com/graphql-schema-stitching-8af23354ac37)
+   — and [graphql-tools](https://github.com/apollographql/graphql-tools)
 
 ## Contributors
 
