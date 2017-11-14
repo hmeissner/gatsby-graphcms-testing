@@ -104,10 +104,13 @@ class IndexPage extends Component {
                 <figcaption>
                   <h3>{node.title}</h3>
                 </figcaption>
-                { node.artist ?
-                  <p><Link to={`#${node.artist.slug}`}>{node.artist.name}</Link></p>
-                  : <p>(Compilation album, various artists)</p>
-                }
+                {node.artist ? (
+                  <p>
+                    <Link to={`#${node.artist.slug}`}>{node.artist.name}</Link>
+                  </p>
+                ) : (
+                  <p>(Compilation album, various artists)</p>
+                )}
                 {node.tracks.map((track, i) => (
                   <h6 key={track.id}>
                     {track.title}{' '}
@@ -169,7 +172,9 @@ class IndexPage extends Component {
               {node.comments.length ? (
                 <div>
                   <h6>Comments</h6>
-                  {node.comments.map((comment, i) => <p key={comment.body}>{comment.body}</p>)}
+                  {node.comments.map((comment, i) => (
+                    <p key={comment.body}>{comment.body}</p>
+                  ))}
                 </div>
               ) : null}
             </article>
