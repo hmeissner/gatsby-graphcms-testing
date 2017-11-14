@@ -9,7 +9,7 @@ See [@GraphCMS/gatsby-source-graphcms](https://github.com/GraphCMS/gatsby-source
 Swap `yarn build` for `yarn watch` in plugin's directory for
 auto-rebuilding the plugin after you make changes to it.
 
-### Every time you rebuild the plugin, gatsby's development server has to be restarted for the changes to reflect.
+### Every time you rebuild the plugin, gatsby's development server has to be restarted for the changes to be reflected.
 
 For an kitchen sink Graph<em>i</em>QL query you can run on Gatsby’s
 graphql debugger at <http://localhost:8000/___graphql>, try this
